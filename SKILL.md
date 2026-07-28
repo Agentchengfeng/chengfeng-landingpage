@@ -1,0 +1,16 @@
+---
+name: chengfeng-landingpage
+description: Install the metaphor-led-landing skill for Codex and Claude Code.
+---
+
+# chengfeng-landingpage
+
+This is the installer package for `metaphor-led-landing`.
+
+Install it with:
+
+```sh
+npx -y github:Agentchengfeng/chengfeng-landingpage install
+```
+
+The installed skill turns product or personal material into an original, full-screen, video-led homepage hero. It can generate video through an authorized API or hand off a first frame and copy-ready prompt for external image-to-video generation.

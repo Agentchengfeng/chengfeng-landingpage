@@ -1,0 +1,38 @@
+{
+  "name": "chengfeng-landingpage",
+  "version": "0.1.0",
+  "description": "Installable video-led homepage hero skill for Claude Code and Codex",
+  "license": "Apache-2.0",
+  "author": "成峰 / AI产品自由",
+  "bin": {
+    "chengfeng-landingpage": "bin/install.js",
+    "metaphor-led-landing-cpm": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    "CITATION.cff",
+    "SKILL.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "codex",
+    "skill",
+    "landing-page",
+    "video-generation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agentchengfeng/chengfeng-landingpage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Agentchengfeng/chengfeng-landingpage/issues"
+  },
+  "homepage": "https://github.com/Agentchengfeng/chengfeng-landingpage#readme",
+  "engines": {
+    "node": ">=18"
+  }
+}
