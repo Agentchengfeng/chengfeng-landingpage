@@ -1,4 +1,4 @@
 interface:
   display_name: "隐喻驱动全屏视频落地页"
   short_description: "Turn product tension into a full-screen video-led landing"
-  default_prompt: "Use $metaphor-led-landing to create a full-screen video-led metaphor landing page."
+  default_prompt: "Use $chengfeng-landingpage to create a full-screen video-led metaphor landing page."

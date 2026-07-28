@@ -1,7 +1,7 @@
 <!--
 input: 一个已经定好视觉隐喻的中文落地页
 output: 该页的字体选择（display / body）
-pos: metaphor-led-landing 的字体选型层。排版参数见 cjk-typography.md，这里只管选哪款字体。
+pos: chengfeng-landingpage 的字体选型层。排版参数见 cjk-typography.md，这里只管选哪款字体。
 -->
 
 # 字体声音（type voice）

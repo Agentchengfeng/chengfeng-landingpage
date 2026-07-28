@@ -7,7 +7,7 @@ const path = require('path');
 
 const HOME = process.env.CHENGFENG_LANDINGPAGE_HOME || os.homedir();
 const PKG_ROOT = path.resolve(__dirname, '..');
-const SKILL_NAME = 'metaphor-led-landing';
+const SKILL_NAME = 'chengfeng-landingpage';
 const SOURCE = path.join(PKG_ROOT, 'skills', SKILL_NAME);
 const CLAUDE_SKILLS = path.join(HOME, '.claude', 'skills');
 const CODEX_SKILLS = path.join(HOME, '.codex', 'skills');

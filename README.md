@@ -19,7 +19,7 @@ npx -y github:Agentchengfeng/chengfeng-landingpage install
 Restart Claude Code or Codex, then say:
 
 ```text
-Use metaphor-led-landing to turn my existing materials into a full-screen homepage hero.
+Use chengfeng-landingpage to turn my existing materials into a full-screen homepage hero.
 ```
 
 Compatibility command:
@@ -72,8 +72,8 @@ When a configured video API is available and authorized, the Agent can create th
 ## What gets installed
 
 ```text
-~/.claude/skills/metaphor-led-landing/
-~/.codex/skills/metaphor-led-landing -> Claude skill directory
+~/.claude/skills/chengfeng-landingpage/
+~/.codex/skills/chengfeng-landingpage -> Claude skill directory
 ```
 
 Existing copies are backed up before replacement. The package contains instructions and verification tools only; it intentionally excludes API keys, local projects, generated pages, videos, screenshots, fonts, and private logs.
@@ -88,7 +88,7 @@ chengfeng-landingpage/
 ├── CITATION.cff
 ├── package.json
 ├── bin/install.js
-└── skills/metaphor-led-landing/
+└── skills/chengfeng-landingpage/
     ├── SKILL.md
     ├── agents/openai.yaml
     ├── references/

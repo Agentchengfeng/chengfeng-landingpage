@@ -1,11 +1,11 @@
 ---
 name: chengfeng-landingpage
-description: Install the metaphor-led-landing skill for Codex and Claude Code.
+description: Install the chengfeng-landingpage skill for Codex and Claude Code.
 ---
 
 # chengfeng-landingpage
 
-This is the installer package for `metaphor-led-landing`.
+This is the installer package for `chengfeng-landingpage`.
 
 Install it with:
 

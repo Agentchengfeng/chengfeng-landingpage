@@ -1,9 +1,9 @@
 ---
-name: metaphor-led-landing
+name: chengfeng-landingpage
 description: Transform a product's core promise into one original visual metaphor and directly produce a video-led landing-page direction, creative brief, or requested visual/video/web deliverable. Use when users ask to express a product through a metaphor, create a metaphor-led landing page, turn abstract product value into visual design, or make a brand/product demo feel less generic. For visual or landing-page production, always create a playable video layer and use it as the full-viewport hero world with editable DOM UI above it; do not return a static-only page or a contained video card unless explicitly requested. Do not use for ordinary UI implementation that has no positioning or narrative-design need.
 ---
 
-# Metaphor-led landing production
+# chengfeng-landingpage production
 
 Turn the product's central tension into one visual system. Decide the direction; do not present a menu of concepts or ask the user to choose one.
 

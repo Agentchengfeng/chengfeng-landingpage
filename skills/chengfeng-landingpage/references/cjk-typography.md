@@ -1,7 +1,7 @@
 <!--
 input: 一个中文落地页（HTML + CSS）
 output: 通过审计的中文排版
-pos: metaphor-led-landing 的中文排版规格层。SKILL.md 的 CJK typography 一节是摘要，这里是完整依据。
+pos: chengfeng-landingpage 的中文排版规格层。SKILL.md 的 CJK typography 一节是摘要，这里是完整依据。
 -->
 
 # 中文排版规格
