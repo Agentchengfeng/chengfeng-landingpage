@@ -31,7 +31,9 @@ For a video-led landing-page task, read [references/case-studies.md](references/
    - typography that matches the language of the live copy, including its reading size, line height, and tracking;
    - interaction behavior that reinforces the same relationship.
 5. For every visual or landing-page production, create a motion source before building the page:
-   - create an original, production-quality raster first-frame visual with usable negative space for live UI; do not use an SVG, CSS diagram, wireframe, or other placeholder as the generation source;
+   - create an original, production-quality raster first-frame visual with usable negative space for live UI; when the Agent has image-generation capability, generate it directly and prefer the `image2` model when available;
+   - when the Agent has no image-generation capability, give the user one copy-ready `image2` first-frame prompt and the exact image contract (`16:9`, intended subject position, reserved live-copy region, palette/material/lighting, no baked text/logo/UI). Ask the user to generate the image through an available image-generation service—preferably one offering `image2`—and upload the resulting PNG back to the Agent;
+   - do not use an SVG, CSS diagram, wireframe, or other placeholder as the generation source;
    - create a playable 4–8 second video loop from that frame;
    - animate the part of the metaphor that proves the product relationship; keep framing and non-semantic elements stable;
    - keep text, logos, and UI out of generated footage.
@@ -103,3 +105,4 @@ When producing a page or video, use the same logic internally and lead with the 
 - Do not fix typography by appending another override block at the end of the stylesheet. Patch stacks make one value live in two places and drift apart; edit the source rule instead. If a trailing block already exists, fold it in rather than adding a third layer.
 - Do not batch-rewrite minified or single-line CSS with regex without verifying brace balance and numeric validity afterwards — greedy matches turn `.72rem/1.55` into `1.5.55`.
 - Use a paid external media API only when it is authorized in the task. If it is unavailable, preserve the video-led outcome through the manual handoff: provide the first frame, copy-ready image-to-video prompt, and MP4 export requirements; then resume after the user imports the generated video. Do not silently downgrade to a static hero or pretend a local placeholder is equivalent footage.
+- If image generation is unavailable, preserve the same first-frame quality bar through the manual `image2` prompt handoff. Do not replace the required raster first frame with an SVG, CSS drawing, stock placeholder, or unrelated screenshot.

@@ -55,9 +55,9 @@ function install() {
   const compatBackup = backupAndRemove(LINK, `${SKILL_NAME}-compat`);
   fs.symlinkSync(DESTINATION, LINK);
   log(`✓ ${SKILL_NAME} installed`);
-  log('✓ Agent compatibility link created');
+  log('✓ Agent Skill registered');
   if (skillBackup) log('  Existing Agent Skill backed up.');
-  if (compatBackup) log('  Existing compatibility link backed up.');
+  if (compatBackup) log('  Existing Agent registration backed up.');
   log('Restart your Agent so the Skill list reloads.');
 }
 
@@ -68,7 +68,7 @@ function doctor() {
   const ok = fs.existsSync(skill) && fs.existsSync(notice) && linkOk;
   log(`${fs.existsSync(skill) ? '✓' : '✗'} Agent Skill installed`);
   log(`${fs.existsSync(notice) ? '✓' : '✗'} Attribution notice present`);
-  log(`${linkOk ? '✓' : '✗'} Agent compatibility link present`);
+  log(`${linkOk ? '✓' : '✗'} Agent Skill registration present`);
   process.exitCode = ok ? 0 : 1;
 }
 
@@ -77,7 +77,7 @@ function uninstall() {
   const skillBackup = backupAndRemove(DESTINATION, `${SKILL_NAME}-removed`);
   log(`✓ Removed ${SKILL_NAME}; backups are preserved.`);
   if (skillBackup) log('  Removed Agent Skill backed up.');
-  if (linkBackup) log('  Removed compatibility link backed up.');
+  if (linkBackup) log('  Removed Agent registration backed up.');
 }
 
 function help() {

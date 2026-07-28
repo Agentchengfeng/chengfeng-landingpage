@@ -22,12 +22,6 @@ Restart your Agent, then say:
 Use chengfeng-landingpage to turn my existing materials into a full-screen homepage hero.
 ```
 
-Compatibility command:
-
-```sh
-npx -y github:Agentchengfeng/chengfeng-landingpage cpm install
-```
-
 Check or remove an installation:
 
 ```sh
@@ -57,7 +51,9 @@ Your profile / product material / reference
      MP4 loop + editable full-screen HTML hero
 ```
 
-When a configured video API is available and authorized, the Agent can create the loop directly. Otherwise it gives the user the first-frame PNG, a copy-ready image-to-video prompt, and the export specification. The user imports the MP4 after generating it through a service they can access; the Agent then completes the homepage hero.
+For the first frame, the Agent generates the image directly and prefers `image2` when it is available. Without image-generation capability, it provides a copy-ready `image2` prompt and the exact frame specification; the user returns the generated PNG to the Agent.
+
+When a configured video API is available and authorized, the Agent can create the loop directly. Otherwise it gives the user the approved first-frame PNG, a copy-ready image-to-video prompt, and the export specification. The user imports the MP4 after generating it through a service they can access; the Agent then completes the homepage hero.
 
 ## What the skill enforces
 
@@ -71,11 +67,7 @@ When a configured video API is available and authorized, the Agent can create th
 
 ## What gets installed
 
-```text
-<agent-skill-home>/chengfeng-landingpage/
-```
-
-The installer writes the Skill into the supported Agent environment and creates the compatibility link required by that environment. Existing copies are backed up before replacement. The package contains instructions and verification tools only; it intentionally excludes API keys, local projects, generated pages, videos, screenshots, fonts, and private logs.
+The installer places `chengfeng-landingpage` in the Agent's local Skill library. Existing copies are backed up before replacement. The package contains instructions and verification tools only; it intentionally excludes API keys, local projects, generated pages, videos, screenshots, fonts, and private logs.
 
 ## Repository structure
 
