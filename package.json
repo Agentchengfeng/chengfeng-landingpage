@@ -1,7 +1,7 @@
 {
   "name": "chengfeng-landingpage",
   "version": "0.1.0",
-  "description": "Installable video-led homepage hero skill for Claude Code and Codex",
+  "description": "Installable video-led homepage hero Skill for Agent environments",
   "license": "Apache-2.0",
   "author": "成峰 / AI产品自由",
   "bin": {
@@ -17,8 +17,8 @@
     "SKILL.md"
   ],
   "keywords": [
-    "claude-code",
-    "codex",
+    "agent",
+    "agent-skill",
     "skill",
     "landing-page",
     "video-generation"

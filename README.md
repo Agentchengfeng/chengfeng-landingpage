@@ -10,13 +10,13 @@ It does not copy a reference site's branding, artwork, prompts, or footage. It a
 
 ## Quick Start
 
-Requires Node.js 18+ and either Claude Code or Codex.
+Requires Node.js 18+ and an Agent that supports local Skills.
 
 ```sh
 npx -y github:Agentchengfeng/chengfeng-landingpage install
 ```
 
-Restart Claude Code or Codex, then say:
+Restart your Agent, then say:
 
 ```text
 Use chengfeng-landingpage to turn my existing materials into a full-screen homepage hero.
@@ -72,11 +72,10 @@ When a configured video API is available and authorized, the Agent can create th
 ## What gets installed
 
 ```text
-~/.claude/skills/chengfeng-landingpage/
-~/.codex/skills/chengfeng-landingpage -> Claude skill directory
+<agent-skill-home>/chengfeng-landingpage/
 ```
 
-Existing copies are backed up before replacement. The package contains instructions and verification tools only; it intentionally excludes API keys, local projects, generated pages, videos, screenshots, fonts, and private logs.
+The installer writes the Skill into the supported Agent environment and creates the compatibility link required by that environment. Existing copies are backed up before replacement. The package contains instructions and verification tools only; it intentionally excludes API keys, local projects, generated pages, videos, screenshots, fonts, and private logs.
 
 ## Repository structure
 

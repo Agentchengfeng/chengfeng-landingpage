@@ -1,6 +1,6 @@
 ---
 name: chengfeng-landingpage
-description: Install the chengfeng-landingpage skill for Codex and Claude Code.
+description: Install the chengfeng-landingpage skill for supported Agent environments.
 ---
 
 # chengfeng-landingpage
